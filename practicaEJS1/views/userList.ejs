@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=", initial-scale=1.0>
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <h2>******USERS LIST******</h2>
+    <ul>
+        <% for (let i = 0; i < nombres.length; i++) { %>
+            <li>
+                <%= nombres[i] %>
+            </li>
+        <% } %>
+    </ul>
+
+    <ul>
+        <% for (let i = 0; i < apellidoUsers.length; i++) { %>
+            <li>
+                <%= apellidoUsers[i] %>
+            </li>
+        <% } %>
+    </ul>
+</body>
+</html>

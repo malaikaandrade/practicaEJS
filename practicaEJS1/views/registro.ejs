@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <h2 Secciónn de registro></h2>
+    <img src="/img/pasiflora2.jpeg" class="flor">
+    <form action="POST" action="/registro" class="registro"></form>
+        <label for ="">Nombre</label>
+        <input type="text" name="nombre">
+        <p>Hobbies</p>
+        <!--  esto es para hacer que se repita el input de hobbies 10 veces, el label nos sirve prar escribir al lado de la cajita lo que queremos que señale le pones i para que textualmente escriba lo que vale la i en cada iteración, en la primera iteración valdría hobbie 0 y así sucesivamente -->
+        <% for(let i=0; i < 10; i++) { %>
+            <label for="">Hobbie <%= i %></label>
+            <% if (i % 2 == 0) { %>
+                <input class="par" type="text" name="hobbies[]">
+            <% } else { %>
+                <input class="impar" type="text" name="hobbies[]">
+            <% } %>
+        <% } %>
+    </form>
+
+
+    
+</body>
+</html>

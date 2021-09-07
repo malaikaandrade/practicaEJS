@@ -1,0 +1,21 @@
+
+.par{
+    border: 2px palevioletred solid;
+    width: 200px;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.impar{
+    border: 2px blueviolet solid;
+    width: 200px;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 10px;
+
+}
+
+.registro{
+    display: flex;
+    
+}

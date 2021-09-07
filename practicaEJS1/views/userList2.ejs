@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=", initial-scale=1.0>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>******************HEADER********************</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Productos</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>******USERS LIST******</h1>
+
+    <% let apellidos = for (let i = 0; i < apellidoUsers.length; i++) { %>
+        <%= apellidoUsers[i] %>
+    <% } %>
+
+    <% for(let nombre of nombres) { %>
+        <h2>
+            Mi nombre es <%= nombre %> y mi apellido es <% apellidos %>
+        </h2>
+
+    <% } %>
+</body>
+</html>
